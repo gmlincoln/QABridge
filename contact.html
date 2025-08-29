@@ -9,6 +9,13 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Alert -->
+    <div id="success-alert"
+        class="fixed top-5 right-5 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg opacity-0 z-[9999] transition-all duration-500">
+        Message sent successfully!
+    </div>
+
+    <!-- Header -->
     <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur sticky top-0 z-50 border-b dark:border-gray-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2">
@@ -48,24 +55,28 @@
         <p class="mt-2 text-gray-600 dark:text-gray-400">Tell us about your product and goals. We’ll reply within 24
             hours.</p>
 
+        <!-- Contact Form -->
+
+
+
         <form id="quote" class="mt-8 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-2xl p-6 grid gap-4"
-            action="https://formspree.io/f/xldwgzbg" method="POST">
+            action="https://formspree.io/f/xldwgzbg" method="post">
             <div class="grid sm:grid-cols-2 gap-4">
                 <label class="grid gap-1 text-sm">Full Name
-                    <input required type="text"
+                    <input name="name" required type="text"
                         class="mt-1 rounded-xl border dark:border-gray-700 bg-white dark:bg-gray-950 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500">
                 </label>
                 <label class="grid gap-1 text-sm">Work Email
-                    <input required type="email"
+                    <input name="email" required type="email"
                         class="mt-1 rounded-xl border dark:border-gray-700 bg-white dark:bg-gray-950 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500">
                 </label>
             </div>
             <label class="grid gap-1 text-sm">Company
-                <input type="text"
+                <input name="company" type="text"
                     class="mt-1 rounded-xl border dark:border-gray-700 bg-white dark:bg-gray-950 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500">
             </label>
             <label class="grid gap-1 text-sm">Project Type
-                <select
+                <select name="projectType"
                     class="mt-1 rounded-xl border dark:border-gray-700 bg-white dark:bg-gray-950 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500">
                     <option>Manual & Regression</option>
                     <option>Test Automation</option>
@@ -76,18 +87,23 @@
                 </select>
             </label>
             <label class="grid gap-1 text-sm">What are your goals?
-                <textarea rows="5"
+                <textarea name="goals" rows="5"
                     class="mt-1 rounded-xl border dark:border-gray-700 bg-white dark:bg-gray-950 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-500"
                     placeholder="Briefly describe your app, stack, and targets..."></textarea>
             </label>
             <div class="flex items-center gap-3">
-                <button class="rounded-xl bg-indigo-600 text-white px-5 py-3 hover:bg-indigo-700">Request
-                    Service</button>
+                <button id="submitBtn" type="submit"
+                    class="rounded-xl bg-indigo-600 text-white px-5 py-3 hover:bg-indigo-700">Request Service</button>
                 <a href="pricing.html"
                     class="rounded-xl border dark:border-gray-700 px-5 py-3 hover:bg-gray-100 dark:hover:bg-gray-800">View
                     Pricing</a>
             </div>
+
+
+
         </form>
+
+
 
         <div class="mt-8 text-sm text-gray-600 dark:text-gray-400">
             Or email: <a class="text-indigo-600 dark:text-indigo-400 underline"

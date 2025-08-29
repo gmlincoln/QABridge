@@ -43,3 +43,43 @@ if (root.classList.contains('dark')) {
 }
 
 
+// Contact form
+const form = document.getElementById('quote');
+const alertBox = document.getElementById('success-alert');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+        name: form.name.value,
+        email: form.email.value,
+        company: form.company.value,
+        projectType: form.projectType.value,
+        goals: form.goals.value
+    };
+
+    try {
+        const response = await fetch('https://formspree.io/f/xldwgzbg', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            // Show alert
+            alertBox.style.opacity = '1';
+            alertBox.style.transform = 'translateY(0)';
+            form.reset();
+
+            // Hide after 3 sec
+            setTimeout(() => {
+                alertBox.style.opacity = '0';
+                alertBox.style.transform = 'translateY(-10px)';
+            }, 3000);
+        } else {
+            console.log('Failed to send');
+        }
+    } catch (err) {
+        console.error(err);
+    }
+});
