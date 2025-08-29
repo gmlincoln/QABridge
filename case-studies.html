@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Case Studies — QABridge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Header -->
+    <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur sticky top-0 z-50 border-b dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-indigo-600 text-white font-bold">QA</span>
+                <span class="font-semibold">QABridge</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case Studies</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                <a class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+                    href="contact.html#quote">Contact</a>
+                <button id="themeToggle"
+                    class="ml-3 inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">🌙</button>
+            </nav>
+            <button id="menuBtn"
+                class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">☰</button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t bg-white dark:bg-gray-900 dark:border-gray-700">
+            <nav class="px-4 py-3 grid gap-2 text-sm">
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case
+                    Studies</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <h1 class="text-3xl font-extrabold">Case Studies</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-400">Real outcomes from real engagements.</p>
+
+        <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <article class="bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-2xl p-6 flex flex-col">
+                <h3 class="font-semibold">FinTech Web Platform</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Introduced Playwright UI + API tests;
+                    stabilized releases.</p>
+                <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                        <dt class="text-gray-500 dark:text-gray-400">Bug Leakage</dt>
+                        <dd class="font-semibold">-62%</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500 dark:text-gray-400">Regression Time</dt>
+                        <dd class="font-semibold">-48%</dd>
+                    </div>
+                </dl>
+                <a href="contact.html"
+                    class="mt-6 inline-flex rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Discuss
+                    Similar</a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-2xl p-6 flex flex-col">
+                <h3 class="font-semibold">HealthTech Mobile App</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Device lab + Appium automation for critical
+                    flows.</p>
+                <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                        <dt class="text-gray-500 dark:text-gray-400">Crash Rate</dt>
+                        <dd class="font-semibold">-71%</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500 dark:text-gray-400">Store Rating</dt>
+                        <dd class="font-semibold">4.6★</dd>
+                    </div>
+                </dl>
+                <a href="contact.html"
+                    class="mt-6 inline-flex rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Discuss
+                    Similar</a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-2xl p-6 flex flex-col">
+                <h3 class="font-semibold">E-commerce API</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Postman + Newman CI, performance baseline with
+                    k6.</p>
+                <dl class="mt-4 grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                        <dt class="text-gray-500 dark:text-gray-400">Checkout Failures</dt>
+                        <dd class="font-semibold">-55%</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500 dark:text-gray-400">Latency p95</dt>
+                        <dd class="font-semibold">-38%</dd>
+                    </div>
+                </dl>
+                <a href="contact.html"
+                    class="mt-6 inline-flex rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Discuss
+                    Similar</a>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t bg-white dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>© <span id="y"></span> QABridge. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="privacy.html">Privacy</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

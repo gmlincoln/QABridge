@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Services — QABridge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header
+        class="bg-white/80 backdrop-blur sticky top-0 z-50 border-b dark:bg-gray-800/80 dark:border-gray-700 supports-[backdrop-filter]:bg-white/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-indigo-600 text-white font-bold">QA</span>
+                <span class="font-semibold">QABridge</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case
+                    Studies</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                <a class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+                    href="contact.html#quote">Contact</a>
+                <button id="themeToggle"
+                    class="ml-3 inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">
+                    🌙
+                </button>
+            </nav>
+            <button id="menuBtn"
+                class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">☰</button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t bg-white dark:bg-gray-800 dark:border-gray-700">
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case
+                    Studies</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                <a class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+                    href="contact.html#quote">Contact</a>
+                <button id="themeToggle"
+                    class="ml-3 inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">
+                    🌙
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <h1 class="text-3xl font-extrabold">QA Services</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-300">Pick exactly what you need or bundle for end-to-end coverage.
+        </p>
+
+        <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <!-- Card -->
+            <article class="bg-white dark:bg-gray-800 border rounded-2xl p-6 dark:border-gray-700">
+                <h3 class="font-semibold text-lg">Manual & Regression Testing</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">User stories, acceptance criteria, exploratory
+                    sessions,
+                    and full regression packs.</p>
+                <ul class="mt-3 text-sm text-gray-700 dark:text-gray-400 list-disc pl-5 space-y-1">
+                    <li>Test case design & execution</li>
+                    <li>Cross-browser & cross-device</li>
+                    <li>Bug reporting with repro steps</li>
+                </ul>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 border rounded-2xl p-6 dark:border-gray-700">
+                <h3 class="font-semibold text-lg">Test Automation (Web/API)</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Stable frameworks using Playwright, Cypress,
+                    Selenium &
+                    REST clients.</p>
+                <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-400">
+                    <li>Page-object / fixture pattern</li>
+                    <li>CI/CD integration (GitHub/GitLab/Jenkins)</li>
+                    <li>Flaky-test control & reporting</li>
+                </ul>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 border rounded-2xl p-6 dark:border-gray-700">
+                <h3 class="font-semibold text-lg">Performance & Load</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Throughput, latency, and capacity planning.</p>
+                <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-400">
+                    <li>Scenarios with JMeter/k6</li>
+                    <li>APM integration (Grafana/Datadog)</li>
+                    <li>Bottleneck analysis & tuning</li>
+                </ul>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 border rounded-2xl p-6 dark:border-gray-700">
+                <h3 class="font-semibold text-lg">Security & OWASP Checks</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Baseline security testing and SAST/DAST setup.
+                </p>
+                <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-400">
+                    <li>Auth, session, input validation</li>
+                    <li>Dependency audit & configs</li>
+                    <li>DevSecOps coaching</li>
+                </ul>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 border rounded-2xl p-6 dark:border-gray-700">
+                <h3 class="font-semibold text-lg">Mobile App QA</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Android/iOS device matrices, UI & network
+                    testing.</p>
+                <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-400">
+                    <li>Real devices & emulators</li>
+                    <li>App Store / Play release checks</li>
+                    <li>Automation with Appium</li>
+                </ul>
+            </article>
+
+            <article class="bg-white dark:bg-gray-800 border rounded-2xl p-6 dark:border-gray-700">
+                <h3 class="font-semibold text-lg">UAT & Release Support</h3>
+                <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Go-live readiness and hypercare.</p>
+                <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-400">
+                    <li>Checklists & sign-off gates</li>
+                    <li>Smoke packs & roll-back plan</li>
+                    <li>On-call during cutover</li>
+                </ul>
+            </article>
+        </div>
+
+        <div
+            class="mt-10 bg-indigo-50 dark:bg-indigo-900/40 border border-indigo-100 dark:border-indigo-700 rounded-2xl p-6">
+            <h2 class="font-semibold">Tooling We Love</h2>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">Playwright, Cypress, Selenium, Postman, Newman,
+                JMeter,
+                k6, OWASP ZAP, Sonar, Allure, ReportPortal, GitHub Actions, Docker.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t bg-white dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>© <span id="y"></span> QABridge. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="privacy.html">Privacy</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

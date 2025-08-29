@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>QABridge — Software QA & Testing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header
+        class="bg-white/80 dark:bg-gray-800/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-gray-800/60 sticky top-0 z-50 border-b dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span
+                        class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-indigo-600 text-white font-bold">QA</span>
+                    <span class="font-semibold">QABridge</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 text-sm">
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case
+                        Studies</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                    <a class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+                        href="contact.html#quote">Contact</a>
+                    <button id="themeToggle"
+                        class="ml-3 inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">
+                        🌙
+                    </button>
+                </nav>
+                <button id="menuBtn"
+                    class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border dark:border-gray-600">
+                    <span class="sr-only">Open menu</span>☰
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t bg-white dark:bg-gray-800 dark:border-gray-700">
+            <nav class="px-4 py-3 grid gap-2 text-sm">
+                <a class="py-2" href="services.html">Services</a>
+                <a class="py-2" href="pricing.html">Pricing</a>
+                <a class="py-2" href="case-studies.html">Case Studies</a>
+                <a class="py-2" href="process.html">Process</a>
+                <a class="py-2" href="contact.html">Contact</a>
+                <a class="py-2 inline-flex items-center justify-center rounded-xl bg-indigo-600 text-white"
+                    href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+        <div
+            class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+                        Ship faster with <span class="text-indigo-600 dark:text-indigo-400">reliable QA</span>
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                        Manual, automation, performance, and security testing tailored to your product and release
+                        cycle.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="services.html"
+                            class="rounded-xl bg-indigo-600 px-5 py-3 text-white hover:bg-indigo-700">Explore
+                            Services</a>
+                        <a href="contact.html"
+                            class="rounded-xl border px-5 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 dark:border-gray-600">Contact</a>
+                        </a>
+                    </div>
+                    <div class="mt-6 flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+                        <span>ISO-like process</span><span>•</span><span>ISTQB team</span><span>•</span><span>CI/CD
+                            friendly</span>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border dark:border-gray-700 p-6">
+                    <h3 class="font-semibold text-lg">What we cover</h3>
+                    <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
+                        <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Functional &
+                                Regression</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Test Automation
+                                (Web/API)</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Performance & Load</span>
+                        </li>
+                        <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Mobile &
+                                Cross-browser</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Security & OWASP
+                                checks</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>UAT & Release Support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold">Why QABridge</h2>
+            <div class="mt-6 grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border dark:border-gray-700">
+                    <h3 class="font-semibold">Defect Prevention</h3>
+                    <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Shift-left reviews & risk-based testing to
+                        stop bugs
+                        early.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border dark:border-gray-700">
+                    <h3 class="font-semibold">Automation ROI</h3>
+                    <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Stable, maintainable suites integrated with
+                        your
+                        CI/CD.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border dark:border-gray-700">
+                    <h3 class="font-semibold">Transparent Reporting</h3>
+                    <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Weekly quality scorecards, coverage, and
+                        trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-indigo-600 dark:bg-indigo-700 text-white rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="text-2xl font-bold">Ready to harden your releases?</h3>
+                    <p class="text-white/80">Book a free 30-minute QA assessment.</p>
+                </div>
+                <a href="contact.html#quote"
+                    class="rounded-xl bg-white text-indigo-700 px-5 py-3 font-semibold hover:bg-gray-100 dark:hover:bg-gray-200">Book
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t bg-white dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>© <span id="y"></span> QABridge. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="privacy.html">Privacy</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

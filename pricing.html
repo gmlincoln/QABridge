@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pricing — QABridge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header class="bg-white/80 dark:bg-gray-800/80 backdrop-blur sticky top-0 z-50 border-b dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-indigo-600 text-white font-bold">QA</span>
+                <span class="font-semibold">QABridge</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case Studies</a>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                <a class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+                    href="contact.html#quote">Contact</a>
+                <!-- Theme Toggle -->
+                <button id="themeToggle"
+                    class="ml-3 inline-flex items-center justify-center rounded-xl p-2 border border-gray-300 dark:border-gray-600">
+                    🌙
+                </button>
+            </nav>
+            <button id="menuBtn"
+                class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border border-gray-300 dark:border-gray-600">☰</button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t bg-white dark:bg-gray-800 dark:border-gray-700">
+            <nav class="px-4 py-3 grid gap-2 text-sm">
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="services.html">Services</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="pricing.html">Pricing</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="case-studies.html">Case
+                    Studies</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="process.html">Process</a>
+                <a class="py-2 hover:text-indigo-600 dark:hover:text-indigo-400" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <h1 class="text-3xl font-extrabold">Simple, transparent pricing</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-400">Scale up or down as your release cycle changes.</p>
+
+        <div class="mt-8 grid lg:grid-cols-3 gap-6">
+            <!-- Starter -->
+            <section class="bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-2xl p-6">
+                <h3 class="font-semibold text-lg">Starter</h3>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Best for MVPs</p>
+                <div class="mt-4 text-3xl font-extrabold">$1,499<span
+                        class="text-base font-normal text-gray-600 dark:text-gray-400">/mo</span></div>
+                <ul class="mt-4 text-sm space-y-2">
+                    <li>• Up to 60 hours QA</li>
+                    <li>• Manual test design & execution</li>
+                    <li>• Weekly bug triage</li>
+                    <li>• QA lead & Slack support</li>
+                </ul>
+                <a href="contact.html#quote"
+                    class="mt-6 inline-flex rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">Choose
+                    Starter</a>
+            </section>
+
+            <!-- Growth -->
+            <section
+                class="bg-white dark:bg-gray-800 border-2 border-indigo-600 rounded-2xl p-6 shadow-sm dark:border-indigo-500">
+                <h3 class="font-semibold text-lg">Growth</h3>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Most popular</p>
+                <div class="mt-4 text-3xl font-extrabold">$3,499<span
+                        class="text-base font-normal text-gray-600 dark:text-gray-400">/mo</span></div>
+                <ul class="mt-4 text-sm space-y-2">
+                    <li>• 150 hours blended QA</li>
+                    <li>• Web/API automation suite</li>
+                    <li>• CI integration & reports</li>
+                    <li>• Performance smoke (k6/JMeter)</li>
+                </ul>
+                <a href="contact.html#quote"
+                    class="mt-6 inline-flex rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">Choose
+                    Growth</a>
+            </section>
+
+            <!-- Enterprise -->
+            <section class="bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-2xl p-6">
+                <h3 class="font-semibold text-lg">Enterprise</h3>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Custom SLA & security</p>
+                <div class="mt-4 text-3xl font-extrabold">Custom</div>
+                <ul class="mt-4 text-sm space-y-2">
+                    <li>• Dedicated pod (QA Lead + Eng)</li>
+                    <li>• Full test strategy & audits</li>
+                    <li>• Advanced performance & security</li>
+                    <li>• On-site / timezone alignment</li>
+                </ul>
+                <a href="contact.html#quote"
+                    class="mt-6 inline-flex rounded-xl bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">Talk to
+                    Sales</a>
+            </section>
+        </div>
+
+        <div class="mt-10 text-sm text-gray-600 dark:text-gray-400">
+            * All plans include: defect tracking, coverage reports, and shared dashboards.
+        </div>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="border-t bg-white dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>© <span id="y"></span> QABridge. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="privacy.html">Privacy</a>
+                    <a class="hover:text-indigo-600 dark:hover:text-indigo-400" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
